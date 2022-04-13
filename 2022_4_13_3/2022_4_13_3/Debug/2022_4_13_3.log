@@ -1,0 +1,4 @@
+﻿  结构体.c
+C:\C语言\codevpush\code-road\2022_4_13_3\2022_4_13_3\结构体.c(18,7): warning C4013: “gets”未定义；假设外部返回 int
+C:\C语言\codevpush\code-road\2022_4_13_3\2022_4_13_3\结构体.c(20,14): warning C4013: “strcmp”未定义；假设外部返回 int
+  2022_4_13_3.vcxproj -> C:\C语言\codevpush\code-road\2022_4_13_3\Debug\2022_4_13_3.exe
