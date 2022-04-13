@@ -3,11 +3,11 @@
 
 typedef struct student {
 	char name[20];
-	int perscore;//Æ½¾ù³É¼¨
-	int score1;//ÆÀÒé³É¼¨
-	char isganbu;//Ñ§Éú¸É²¿
-	char iswest;//Î÷²¿
-	int paper;//ÂÛÎÄÊı
+	int perscore;//å¹³å‡æˆç»©
+	int score1;//è¯„è®®æˆç»©
+	char isganbu;//å­¦ç”Ÿå¹²éƒ¨
+	char iswest;//è¥¿éƒ¨
+	int paper;//è®ºæ–‡æ•°
 	int money;
 }stu;
 int main() {
@@ -15,7 +15,7 @@ int main() {
 	scanf("%d", &n);
 	getchar();
 	stu pepo[10];
-	int sum = 0;
+	int sum = 0;//æ€»çš„å¥–å­¦é‡‘
 	for (i = 0; i < n; i++) {
 		scanf("%s %d %d %c %c %d", pepo[i].name, &pepo[i].perscore, &pepo[i].score1, &pepo[i].isganbu,
 			&pepo[i].iswest, &pepo[i].paper);
@@ -32,13 +32,13 @@ int main() {
 			pepo[i].money += 850;
 		sum += pepo[i].money;
 	}
-	stu t = pepo[0];
+	stu max = pepo[0];//
 	for (i = 1; i < n; i++) {
-		if (pepo[i].money > t.money)
-			t = pepo[i];
+		if (pepo[i].money > max.money)
+			max = pepo[i];
 	}
 
-	printf("%s\n%d\n%d\n", t.name, t.money, sum);
+	printf("%s\n%d\n%d\n", max.name, max.money, sum);
 
 	return 0;
 }
