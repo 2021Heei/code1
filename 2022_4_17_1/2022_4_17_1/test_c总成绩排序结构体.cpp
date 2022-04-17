@@ -72,11 +72,11 @@ int main() {
 		//计算每个学生总成绩
 		stu[i].sum = stu[i].sco1 + stu[i].sco2 + stu[i].sco3;
 	}
-	if (issum) {
+	if (issum(stu,n)) {
 		printf("sum\n");
 		print(stu, n);
 	}
-	else if (isname) {
+	else if (isname(stu,n)) {
 		printf("name\n");
 		print(stu, n);
 	}
